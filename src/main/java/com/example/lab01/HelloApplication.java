@@ -58,30 +58,20 @@ public class HelloApplication extends Application {
                 stage.hide();
             }
         });
-        /* Create each of the labels, and set their properties. */
 
-
-        /*
-         * 	TODO Create wordCountLabel, and set their  properties.
-         */
 
         lineCountLabel = new Label("  Number of lines:");
         lineCountLabel.setStyle("-fx-text-fill: green; -fx-font: italic bold 16pt serif;-fx-padding: 4px;-fx-background-color: white");
         lineCountLabel.setMaxWidth(1000);
 
 
-        /*
-         * 	TODO Create wordCountLabel, and set their  properties.
-         */
 
         wordCountLabel = new Label("  Number of wordcount:");
         wordCountLabel.setStyle("-fx-text-fill: red; -fx-font: italic bold 16pt serif;-fx-padding: 4px;-fx-background-color: white");
         wordCountLabel.setMaxWidth(1000);
 
 
-        /*
-         * 	TODO Create charCountLabel, and set their properties.
-         */
+
 
         charCountLabel = new Label("  Number of Charcount:");
         charCountLabel.setStyle("-fx-text-fill: Brown; -fx-font: italic bold 16pt serif;-fx-padding: 4px;-fx-background-color: white");
