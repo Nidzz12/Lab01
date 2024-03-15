@@ -12,7 +12,8 @@ import javafx.stage.Stage;
 
 /**
  * Nidhi Verma
-
+ * version 1.1
+ * creating an application
  */
 public class HelloApplication extends Application {
 
@@ -43,6 +44,13 @@ public class HelloApplication extends Application {
         pane.setBottom(createStatusBar());
 
 
+        /**
+         * TODO call the method createStatusBar
+         *		TODO Create a new button  "process the text" .
+         *		TODO call setOnKeyPressed on this button and pass a lambda to it. In the lambda if the key pressed, invoke processInput method
+         *		TODO set  button style   as "-fx-background-color: darkslateblue; -fx-text-fill: white;"
+         */
+        /*when escape key is pressed close the application*/
 
         Button countButton = new Button("Process this text");
         countButton.setOnAction(event -> processInput());
@@ -58,23 +66,33 @@ public class HelloApplication extends Application {
                 stage.hide();
             }
         });
+        /* Create each of the labels, and set their properties. */
 
+
+        /*
+         * 	TODO Create wordCountLabel, and set their  properties.
+         */
 
         lineCountLabel = new Label("  Number of lines:");
         lineCountLabel.setStyle("-fx-text-fill: green; -fx-font: italic bold 16pt serif;-fx-padding: 4px;-fx-background-color: white");
         lineCountLabel.setMaxWidth(1000);
 
 
+        /*
+         * 	TODO Create wordCountLabel, and set their  properties.
+         */
 
         wordCountLabel = new Label("  Number of wordcount:");
         wordCountLabel.setStyle("-fx-text-fill: red; -fx-font: italic bold 16pt serif;-fx-padding: 4px;-fx-background-color: white");
         wordCountLabel.setMaxWidth(1000);
 
 
-
+        /*
+         * 	TODO Create charCountLabel, and set their properties.
+         */
 
         charCountLabel = new Label("  Number of Charcount:");
-        charCountLabel.setStyle("-fx-text-fill: Brown; -fx-font: italic bold 16pt serif;-fx-padding: 4px;-fx-background-color: white");
+        charCountLabel.setStyle("-fx-text-fill: blue; -fx-font: italic bold 16pt serif;-fx-padding: 4px;-fx-background-color: white");
         charCountLabel.setMaxWidth(1000);
 
         digitCountLabel = new Label("  Number of digitcount:");
